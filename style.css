@@ -5,7 +5,7 @@ body  {
 .container  {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 10fr 1fr;
+  grid-template-rows: 1fr 200px 10fr 1fr;
   grid-template-areas:
     "header"
     "advert"
@@ -16,6 +16,7 @@ body  {
 }
 
 header  {
+  grid-area: header;
   display: flex;
   flex-flow: wrap;
   flex: 0 1 auto;
@@ -30,37 +31,44 @@ header > a  {
 }
 
 main  {
+  grid-area: main;
   background: green;
 }
 
 advert  {
-  background: blue;
+  grid-area: advert;
+  background-image: url(./mi-vr-5.jpg);
+  background-position-x: 50%;
+  background-position-y: 30%;
+  background-size: 1000px
 }
 
 footer  {
+  grid-area: footer;
   margin: 1em 0 0 0;
 }
 
-@media only screen /* mobile */
-  and (max-device-width: 667px)  {
-
-  }
-
 @media only screen /* Tablet */
-  and (min-device-width: 667px) 
-  and (max-device-width: 768px) {
+  and (min-width: 768px) {
     body  {
       font-size: 1.5em;
     }
   }
 
 @media screen /* Desktop/Laptop */
-  and (min-device-width: 768px) 
-  and (max-device-width: 1600px) {
+  and (min-width: 1600px) {
     .container  {
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
     grid-template-areas:
       "header header"
       "advert main"
-      "advert footer"
+      "footer footer"
+    }
+    
+    advert  {
+      background-position-x: 35%;
+      background-position-y: 100%;
+      background-size: 1600px
     }
   }
