@@ -85,11 +85,15 @@ footer  {
   display: flex;
   flex-flow: wrap;
   flex: 0 1 auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding: 1em 0 1em 0;
 }
 
 .bot-bar > a {
   color: black;
+}
+
+iframe  {
+  
 }
