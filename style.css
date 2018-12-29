@@ -1,5 +1,6 @@
 body  {
   font-size: 1em;
+  font-family: 'Cabin', sans-serif;
 }
 
 .container  {
@@ -12,7 +13,6 @@ body  {
     "main"
     "footer";
   text-align: center;
-  font-family: 'Cabin', sans-serif;
 }
 
 header  {
@@ -53,6 +53,10 @@ footer  {
     body  {
       font-size: 1.5em;
     }
+    
+    .bot-bar  {
+      font-size: 0.8em;
+    }
   }
 
 @media screen /* Desktop/Laptop */
@@ -71,4 +75,21 @@ footer  {
       background-position-y: 100%;
       background-size: 1600px
     }
+
+    .bot-bar  {
+      font-size: 0.8em;
+    }
   }
+
+.bot-bar  {
+  display: flex;
+  flex-flow: wrap;
+  flex: 0 1 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0 1em 0;
+}
+
+.bot-bar > a {
+  color: black;
+}
