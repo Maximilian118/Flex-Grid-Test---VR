@@ -8,7 +8,7 @@ body  {
 .container  {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 200px 10fr 50px;
+  grid-template-rows: 50px 200px 1fr 50px;
   grid-template-areas:
     "header"
     "advert"
@@ -121,6 +121,7 @@ iframe  {
 .line  {
   width: 100%;
   border-top: 2px solid white;
+  opacity: 0.4;
 }
 
 a  {
