@@ -8,7 +8,7 @@ body  {
 .container  {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 350px 1fr 50px;
+  grid-template-rows: 50px 280px 1fr 50px;
   grid-template-areas:
     "header"
     "advert"
@@ -35,8 +35,9 @@ advert  {
   grid-area: advert;
   background-image: url(./mi-vr-5.jpg);
   background-position-x: 50%;
-  background-position-y: 30%;
+  background-position-y: 50%;
   background-size: 1000px;
+  animation: 2s ease-out 0s 1 righttoleft;
 }
 
 footer  {
@@ -49,7 +50,20 @@ footer  {
 }
 
 .title-shift  {
-  margin: 170px 0 0 0;
+  margin: 140px 0 0 0;
+}
+
+.title-shift2  {
+  margin: 0 0 0 0;
+}
+
+@keyframes righttoleft {
+  0%  {
+    transform: translateX(100%);
+  }
+  100%  {
+    transform: translateX(0);
+  }
 }
 
 .vid-1  {
