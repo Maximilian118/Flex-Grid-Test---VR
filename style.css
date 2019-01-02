@@ -61,7 +61,7 @@ footer  {
 }
 
 .text-style  {
-  background: -webkit-linear-gradient(0deg, white, #B9D5FF);
+  background: -webkit-linear-gradient(80deg, white, #AEC6DF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
