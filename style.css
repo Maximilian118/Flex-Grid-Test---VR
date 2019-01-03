@@ -161,6 +161,11 @@ img  {
   animation-duration: 3s;
 }
 
+.vid-anim  {
+  animation-name: lefttoright;
+  animation-duration: 3s;
+}
+
 @keyframes bg-righttoleft {
   0% {
     background-position: 20% 75%;
@@ -168,6 +173,15 @@ img  {
   }
   100% {
     background-position: 50% 75%;
+  }
+}
+
+@keyframes opacity {
+  0%  {
+    opacity: 0;
+  }
+  100%  {
+    opacity: 1;
   }
 }
 
@@ -270,6 +284,11 @@ img  {
       object-fit: cover;
       width: 50%;
       height: 200px;
+    }
+
+    .vid-anim  {
+      animation-name: opacity;
+      animation-duration: 6s;
     }
 
     @keyframes bg-righttoleft {
