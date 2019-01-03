@@ -204,12 +204,17 @@ img  {
     }
 
     body  {
-      font-size: 1.5em;
+      font-size: 1.2em;
     }
     
+    header  {
+      font-size: 1.4em;
+    }
+    
+
     advert  {
       background-repeat: no-repeat;
-      font-size: 0.7em;
+      font-size: 0.9em;
     }
 
     .title-shift-p  {
@@ -226,17 +231,9 @@ img  {
       margin: 0 40px 0 0;
     }
     
-    .chan-h3-shift  {
-      font-size: 0.9em;
-      padding: 0 0 0 60px;
-    }
-
-    .chan-p-shift  {
-      padding: 0 800px 0 60px;
-    }
-
     .bot-bar  {
       font-size: 0.8em;
+      margin: 20px 0 0 0;
     }
     
     #hide  {
@@ -253,9 +250,19 @@ img  {
     iframe  {
       width: 50%;
       height: 300px;
-      position: absolute;
       display: block;
       transform: translate(500px, 0)
+    }
+
+    .column  {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      margin: 0 520px 0 10px;
+    }
+
+    .col-p-shift  {
+      transform: translate(0, -20px)
     }
 
     img  {
