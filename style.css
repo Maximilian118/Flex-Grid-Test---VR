@@ -259,7 +259,20 @@ img  {
     .column-text  {
       height: 50%;
     }
-    
+
+    .vid  {
+      position: relative;
+      width: 100%;
+    }
+
+    iframe  {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
     .bot-bar  {
       font-size: 0.8em;
       margin: 20px 0 0 0;
