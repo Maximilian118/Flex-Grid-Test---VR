@@ -325,40 +325,40 @@ img  {
     }
   }
 
-  @media only screen /* Big Tablet */
-  and (min-width: 1170px) {
-    .column-text  {
-      min-height: 260px;
-      padding: 20px 0 0 0;
+@media only screen /* Big Tablet */
+and (min-width: 1170px) {
+  .column-text  {
+    min-height: 260px;
+    padding: 20px 0 0 0;
+  }
+}
+
+@media screen /* Desktop/Laptop */
+  and (min-width: 1900px) {
+    .container  {
+    max-width: 2500px;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 50px 340px 1fr 50px;
+    grid-template-areas:
+      "header header"
+      "sidebar advert"
+      "sidebar main"
+      "footer footer";
+    }
+
+    .column  {
+      
+    }
+
+    sidebar  {
+      background: url(./history-vr-banner.jpg);
+    }
+
+    .bot-bar  {
+      font-size: 0.8em;
+    }
+
+    #hide-desktop  {
+      display: block;
     }
   }
-
-    @media screen /* Desktop/Laptop */
-      and (min-width: 1900px) {
-        .container  {
-        max-width: 2500px;
-        grid-template-columns: 250px 1fr;
-        grid-template-rows: 50px 340px 1fr 50px;
-        grid-template-areas:
-          "header header"
-          "sidebar advert"
-          "sidebar main"
-          "footer footer";
-        }
-
-        .column  {
-         
-        }
-
-        sidebar  {
-          background: url(./history-vr-banner.jpg);
-        }
-
-        .bot-bar  {
-          font-size: 0.8em;
-        }
-
-        #hide-desktop  {
-          display: block;
-        }
-      }
