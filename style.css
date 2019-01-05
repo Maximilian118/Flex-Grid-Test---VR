@@ -147,6 +147,27 @@ img  {
   display: none;
 }
 
+.cont-us-contain  {
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-us-label  {
+  width: 60%;
+}
+
+.cont-us-input  {
+  margin: 20px 0 20px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0 5px 0 5px;
+  background: black;
+  color: white;
+  width: 80%;
+}
+
 .bg-righttoleft {
   -webkit-animation: bg-righttoleft 3s ease-in-out;
   background-position: 50% 75%;
