@@ -27,16 +27,13 @@ header  {
   padding: 5px 0 15px 0;
   font-size: 1.3em;
 }
-
 main  {
   grid-area: main;
 }
-
 advert  {
   grid-area: advert;
   background: url(./mi-vr-5.jpg);
 }
-
 footer  {
   grid-area: footer;
   margin: 1em 0 0 0;
@@ -45,19 +42,15 @@ footer  {
 .title  {
   font-size: 3em;
 }
-
 .title-shift  {
   margin: 90px 0 0 0;
 }
-
 .title-shift-h3  {
   transform: translate(0, -25px)
 }
-
 .title-shift-p  {
   transform: translate(0, 15px)
 }
-
 .text-style  {
   background: -webkit-linear-gradient(80deg, white, #AEC6DF);
   -webkit-background-clip: text;
@@ -69,27 +62,24 @@ footer  {
   justify-content: space-evenly;
   font-size: 1em;
 }
-
 .chan-img  {
   width: 160px;
   height: 40px;
   border-radius: 5px;
   transition: 1s;
 }
-
 .chan-img:hover  {
   transform: scale(1.1);
   transition: 1s;
 }
 
-.chan-content {
+.column-main {
   display: flex;
   position: relative;
   width: 100%;
   padding-bottom: 56%;
   margin: 8px 0 0 0;
 }
-
 iframe  {
   width: 100%;
   height: 100%;
@@ -123,17 +113,14 @@ img  {
   padding: 0 0 1em 0;
   font-size: 0.8em;
 }
-
 .bot-bar > a {
   color: white;
 }
-
 .bot-bar > a > img  {
   width: 20px;
   height: 20px;
   transition: 0.7s;
 }
-
 .bot-bar > a > img:hover  {
   transition: 0.7s;
   transform: scale(1.3);
@@ -142,30 +129,29 @@ img  {
 #hide  {
   display: none;
 }
-
 #hide-desktop  {
   display: none;
 }
 
-.cont-us-contain  {
-  margin: 20px auto 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+form  {
+  margin: 20px 0 0 0;
 }
 
-.cont-us-label  {
-  width: 60%;
+.input-div  {
+  margin: 20px 0 20px 0;
 }
 
-.cont-us-input  {
-  margin: 20px 0 20px 10px;
+input  {
   border: 1px solid white;
   border-radius: 5px;
-  padding: 0 5px 0 5px;
   background: black;
-  color: white;
-  width: 80%;
+  padding: 0 5px 0 5px;
+}
+textarea  {
+  border: 1px solid white;
+  border-radius: 5px;
+  background: black;
+  padding: 0 5px 0 5px;
 }
 
 .bg-righttoleft {
@@ -173,17 +159,14 @@ img  {
   background-position: 50% 75%;
   background-size: 1000px;
 }
-
 .righttoleft  {
   animation-name: righttoleft;
   animation-duration: 3s;
 }
-
 .lefttoright  {
   animation-name: lefttoright;
   animation-duration: 3s;
 }
-
 .vid-anim  {
   animation-name: lefttoright;
   animation-duration: 3s;
@@ -198,7 +181,6 @@ img  {
     background-position: 50% 75%;
   }
 }
-
 @keyframes opacity {
   0%  {
     opacity: 0;
@@ -207,7 +189,6 @@ img  {
     opacity: 1;
   }
 }
-
 @keyframes righttoleft {
   0%  {
     transform: translateX(100%);
@@ -217,7 +198,6 @@ img  {
     transform: translateX(0);
   }
 }
-
 @keyframes lefttoright {
   0%  {
     transform: translateX(-100%);
@@ -243,11 +223,9 @@ img  {
     body  {
       font-size: 1.2em;
     }
-    
     header  {
       font-size: 1.4em;
     }
-    
     advert  {
       background-repeat: no-repeat;
       font-size: 0.9em;
@@ -261,48 +239,33 @@ img  {
       justify-content: center;
       align-content: center;
     }
-    
     .chan-text  {
       transform: translate(0, 18px);
       margin: 0 20px 0 40px;
     }
 
-    .chan-content  {
+    .column-main  {
       display: flex;
       position: relative;
       flex: 0 1 auto;
-      width: 100%;
       padding-bottom: 0%;
     }
-
     .column  {
       display: flex;
       flex-direction: column;
       margin: 0 10px 0;
       width: 50%;
     }
-
+    .column:nth-child(3)  {
+      display: none;
+    }
+    .column-text  {
+      min-height: 320px;
+    }
     .vid-contain  {
       position: relative;
       overflow: hidden;
       padding-bottom: 56%;
-    }
-
-    .column-text  {
-      min-height: 320px;
-    }
-
-    .vid  {
-      position: relative;
-      width: 100%;
-    }
-
-    iframe  {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
     }
 
     .bot-bar  {
@@ -357,18 +320,14 @@ and (min-width: 1170px) {
 @media screen /* Desktop/Laptop */
   and (min-width: 1900px) {
     .container  {
-    max-width: 2500px;
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 50px 340px 1fr 50px;
-    grid-template-areas:
+      max-width: 2500px;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 50px 340px 1fr 50px;
+      grid-template-areas:
       "header header"
       "sidebar advert"
       "sidebar main"
       "footer footer";
-    }
-
-    .column  {
-      
     }
 
     sidebar  {
@@ -379,7 +338,18 @@ and (min-width: 1170px) {
       font-size: 0.8em;
     }
 
+    .column  {
+      width: 33.3%;
+    }
+    .column:nth-child(3)  {
+      display: flex;
+    }
+    .column-text  {
+      min-height: 310px;
+      padding: 20px 0 0 0;
+    }
+
     #hide-desktop  {
-      display: block;
+      display: flex;
     }
   }
