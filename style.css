@@ -111,7 +111,7 @@ img  {
   justify-content: space-evenly;
   align-items: center;
   padding: 0 0 1em 0;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .bot-bar > a {
   color: white;
@@ -125,12 +125,14 @@ img  {
   transition: 0.7s;
   transform: scale(1.3);
 }
-
-#hide  {
-  display: none;
+.bot-bar-img-space  {
+  margin: 0 0 0 5%;
 }
-#hide-desktop  {
-  display: none;
+.bot-bar-img-space > a {
+  padding: 0 10px;
+}
+.bot-bar-a-space > a {
+  margin: 0 10px;
 }
 
 form  {
@@ -159,15 +161,15 @@ textarea  {
   background-position: 50% 75%;
   background-size: 1000px;
 }
+.vid-anim-go  {
+  animation-name: lefttoright;
+  animation-duration: 3s;
+}
 .righttoleft  {
   animation-name: righttoleft;
   animation-duration: 3s;
 }
 .lefttoright  {
-  animation-name: lefttoright;
-  animation-duration: 3s;
-}
-.vid-anim  {
   animation-name: lefttoright;
   animation-duration: 3s;
 }
@@ -206,6 +208,16 @@ textarea  {
   100%  {
     transform: translateX(0);
   }
+}
+
+#hide  {
+  display: none;
+}
+#hide-desktop  {
+  display: none;
+}
+#hide-line  {
+  display: block;
 }
 
 @media only screen /* Tablet */
@@ -273,7 +285,7 @@ textarea  {
       font-size: 0.9em;
     }
     .bot-bar-img-space  {
-      margin: 0 0 0 400px;
+      margin: 0 0 0 10%;
     }
     .bot-bar-img-space > a {
       padding: 0 20px;
@@ -289,11 +301,14 @@ textarea  {
       height: 200px;
     }
 
-    .vid-anim  {
-      animation-name: opacity;
-      animation-duration: 6s;
+    .vid-anim-go  {
+      animation-name: lefttoright;
+      animation-duration: 3s;
     }
-
+    .vid-anim-quest  {
+      animation-name: righttoleft;
+      animation-duration: 3s;
+    }
     .bg-righttoleft {
       background-size: 2000px;
       background-position: 50% 50%;
@@ -315,6 +330,9 @@ textarea  {
     #hide-desktop  {
       display: none;
     }
+    #hide-line  {
+      display: block;
+    }
   }
 
 @media only screen /* Big Tablet */
@@ -333,13 +351,14 @@ and (min-width: 1170px) {
       grid-template-rows: 50px 340px 1fr 50px;
       grid-template-areas:
       "header header"
-      "sidebar advert"
+      "advert advert"
       "sidebar main"
       "footer footer";
     }
 
     sidebar  {
-      background: url(./history-vr-banner.jpg);
+      background: url(./gear-vr.jpg);
+      background-size: 100%;
     }
 
     .news-games  {
@@ -363,8 +382,21 @@ and (min-width: 1170px) {
       padding: 20px 0 0 0;
     }
 
+    .vid-anim-go  {
+      animation-name: lefttoright;
+      animation-duration: 3s;
+    }
+    .vid-anim-quest  {
+      animation-name: opacity;
+      animation-duration: 6s;
+    }
+    .vid-anim-chronos  {
+      animation-name: righttoleft;
+      animation-duration: 3s;
+    }
+
     .bot-bar  {
-      font-size: 0.8em;
+      font-size: 0.9em;
     }
 
     img  {
@@ -376,6 +408,9 @@ and (min-width: 1170px) {
 
     #hide-desktop  {
       display: block;
+    }
+    #hide-line  {
+      display: none;
     }
   }
   
