@@ -46,7 +46,7 @@ footer  {
   margin: 90px 0 0 0;
 }
 .title-shift-h3  {
-  transform: translate(0, -25px)
+  transform: translate(0, -10px)
 }
 .title-shift-p  {
   transform: translate(0, 15px)
@@ -129,7 +129,7 @@ img  {
   margin: 0 0 0 5%;
 }
 .bot-bar-img-space > a {
-  padding: 0 10px;
+  padding: 0 5px;
 }
 .bot-bar-a-space > a {
   margin: 0 10px;
@@ -243,6 +243,10 @@ textarea  {
       font-size: 0.9em;
     }
 
+    .title-shift-h3  {
+      transform: translate(0, -15px);
+      font-size: 1.5em;
+    }
     .title-shift-p  {
       transform: translate(0, -5px);
     }
@@ -359,6 +363,23 @@ and (min-width: 1170px) {
     sidebar  {
       background: url(./gear-vr.jpg);
       background-size: 100%;
+    }
+
+    .title  {
+      font-size: 3.5em;
+    }
+    .title-shift  {
+      margin: 90px 0 0 0;
+    }
+    .title-shift-h3  {
+      transform: translate(0, -30px);
+      font-size: 2em;
+    }
+    .title-shift-p  {
+      transform: translate(0, -35px);
+    }
+    .channel  {
+      transform: translate(0, -40px);
     }
 
     .news-games  {
