@@ -269,8 +269,17 @@ textarea  {
     }
 
     .bot-bar  {
-      font-size: 0.8em;
       margin: 20px 0 0 0;
+      font-size: 0.9em;
+    }
+    .bot-bar-img-space  {
+      margin: 0 0 0 400px;
+    }
+    .bot-bar-img-space > a {
+      padding: 0 20px;
+    }
+    .bot-bar-a-space > a {
+      margin: 0 20px;
     }
 
     img  {
@@ -303,7 +312,6 @@ textarea  {
     #hide  {
       display: block;
     }
-
     #hide-desktop  {
       display: none;
     }
@@ -344,10 +352,6 @@ and (min-width: 1170px) {
       width: 50%;
     }
 
-    .bot-bar  {
-      font-size: 0.8em;
-    }
-
     .column  {
       width: 33.3%;
     }
@@ -357,6 +361,10 @@ and (min-width: 1170px) {
     .column-text  {
       min-height: 310px;
       padding: 20px 0 0 0;
+    }
+
+    .bot-bar  {
+      font-size: 0.8em;
     }
 
     img  {
