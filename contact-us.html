@@ -28,21 +28,21 @@
         <form action="#">
           <div class="input-div">
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Full Name" required>
+            <input id="name" type="text" maxlength="50" placeholder="Full Name" required>
           </div>
           <div class="input-div">
             <label for="Email">Email</label>
-            <input id="Email" type="text" placeholder="Email Address" required>
+            <input id="Email" type="text" maxlength="50" placeholder="Email Address" required>
           </div>
           <div class="input-div">
             <label for="Subject">Subject</label>
-            <input id="Subject" type="text" placeholder="Subject" required>
+            <input id="Subject" type="text" maxlength="50" placeholder="Subject" required>
           </div>
-          <div>
+          <div class="text-area">
             <label for="text">Description</label>
-            <textarea rows="6" cols="60" id="text" type="text" placeholder="What's on your mind?" required></textarea>
+            <textarea rows="6" cols="60" maxlength="500" id="text" type="text" placeholder="What's on your mind?" required></textarea>
           </div>
-          <a href="./thank-you.html">Submit</a>
+          <a class="submit-button" href="./thank-you.html">Submit</a>
         </form>
       </div>
     </main>
