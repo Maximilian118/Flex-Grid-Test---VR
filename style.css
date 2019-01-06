@@ -334,6 +334,16 @@ and (min-width: 1170px) {
       background: url(./history-vr-banner.jpg);
     }
 
+    .news-games  {
+      display: flex;
+    }
+    .news  {
+      width: 50%;
+    }
+    .games  {
+      width: 50%;
+    }
+
     .bot-bar  {
       font-size: 0.8em;
     }
@@ -350,6 +360,6 @@ and (min-width: 1170px) {
     }
 
     #hide-desktop  {
-      display: flex;
+      display: block;
     }
   }
