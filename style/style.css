@@ -32,7 +32,7 @@ main  {
 }
 advert  {
   grid-area: advert;
-  background: url(./mi-vr-5.jpg);
+  background: url(../img/mi-vr-5.jpg);
 }
 footer  {
   grid-area: footer;
