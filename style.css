@@ -51,10 +51,15 @@ footer  {
 .title-shift-p  {
   transform: translate(0, 15px)
 }
-.text-style  {
+.text-style, h1, h2  {
   background: -webkit-linear-gradient(80deg, white, #AEC6DF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+h2:hover  {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .channel  {
@@ -104,6 +109,26 @@ img  {
   height: 100px;
 }
 
+.headset-quest-bg  {
+  background: url(./oculus-quest-bg.jpg);
+  background-size: 1100px;
+  background-position: 50%;
+}
+.headset-rift-bg  {
+  background: url(./oculus-rift-bg.jpg);
+  background-size: 1300px;
+  background-position: 70%;
+}
+.headset-vive-bg  {
+  background: url(./htc-vive-bg.jpg);
+  background-size: 1000px;
+  background-position: 20%;
+}
+
+.games-chronos-bg  {
+  background: url(./Chronos-bg.jpg);
+}
+
 .bot-bar  {
   display: flex;
   flex-flow: wrap;
@@ -136,42 +161,31 @@ img  {
 }
 
 form  {
-  margin: 0 0 50px 0;
+  max-width: 320px;
+  margin: 0 auto 40px;
+  padding: 40px;
 }
-.input-div  {
-  display: flex;
-  flex-direction: column;
-  margin: 40px auto 20px;
+label  {
+  display: block;
+  margin: 0 0 5px;
+}
+input, textarea {
+  margin: 0 0 20px 0;
   width: 300px;
-}
-input  {
+  background: linear-gradient(80deg, white, #AEC6DF);
   border: 1px solid white;
   border-radius: 5px;
-  background: black;
-  padding: 3px 5px 3px 5px;
-  align-content: right;
-  margin: 10px 0 0 0;
-  background: linear-gradient(80deg, white, #AEC6DF);
-  color: black;
+  padding: 0 5px 0;
 }
-textarea  {
-  border: 1px solid white;
-  border-radius: 5px;
-  background: black;
-  padding: 0 5px 0 5px;
-  margin: 10px 0 20px 0;
-  background: linear-gradient(80deg, white, #AEC6DF);
-  color: black;
+.button  {
+  width: 80px;
+  padding: 5px 15px 5px 15px;
+  transition: 1s;
 }
-.text-area  {
-  margin: 40px 0 20px 0;
-}
-.submit-button  {
-  color: black;
-  border: 1px solid white;
-  background: linear-gradient(80deg, white, #AEC6DF);
-  padding: 5px 20px 5px 20px;
-  border-radius: 10px;
+.button:hover  {
+  background: #FFFFFF;
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 .bg-righttoleft {
@@ -261,12 +275,21 @@ textarea  {
       font-size: 0.9em;
     }
 
+    .title  {
+      font-size: 3.5em;
+    }
+    .title-shift  {
+      margin: 90px 0 0 0;
+    }
     .title-shift-h3  {
-      transform: translate(0, -15px);
-      font-size: 1.5em;
+      transform: translate(0, -30px);
+      font-size: 2em;
     }
     .title-shift-p  {
-      transform: translate(0, -5px);
+      transform: translate(0, -35px);
+    }
+    .channel  {
+      transform: translate(0, -40px);
     }
 
     .channel  {
@@ -405,9 +428,11 @@ and (min-width: 1170px) {
     }
     .news  {
       width: 50%;
+      padding: 0 10px;
     }
     .games  {
       width: 50%;
+      padding: 0 10px;
     }
 
     .column  {
