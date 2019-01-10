@@ -124,6 +124,21 @@ img  {
   background-size: 1000px;
   background-position: 20%;
 }
+.ps-vr-bg  {
+  background: url(./ps-vr-bg.jpg);
+  background-size: 1000px;
+  background-position: 65%;
+}
+.headset-go-bg  {
+  background: url(./oculus-go-bg.jpg);
+  background-size: 1200px;
+  background-position: 20% 60%;
+}
+.headset-gear-bg  {
+  background: url(./Galaxy-S8-Gear-VR-bg.jpg);
+  background-size: 800px;
+  background-position: 40% -35%;
+}
 
 .games-chronos-bg  {
   background: url(./Chronos-bg.jpg);
