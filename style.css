@@ -57,7 +57,15 @@ footer  {
   -webkit-text-fill-color: transparent;
   transition: 1s;
 }
+h1:hover  {
+  transform: scale(1.1);
+  transition: 1s;
+}
 h2:hover  {
+  transform: scale(1.1);
+  transition: 1s;
+}
+a:hover  {
   transform: scale(1.1);
   transition: 1s;
 }
@@ -111,13 +119,13 @@ img  {
 
 .headset-quest-bg  {
   background: url(./oculus-quest-bg.jpg);
-  background-size: 1100px;
+  background-size: 1200px;
   background-position: 50%;
 }
 .headset-rift-bg  {
   background: url(./oculus-rift-bg.jpg);
   background-size: 1300px;
-  background-position: 70%;
+  background-position: 68% 80px;
 }
 .headset-vive-bg  {
   background: url(./htc-vive-bg.jpg);
