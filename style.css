@@ -32,7 +32,7 @@ main  {
 }
 advert  {
   grid-area: advert;
-  background: url(./mi-vr-5.jpg);
+  background: url(./img/mi-vr-5.jpg);
 }
 footer  {
   grid-area: footer;
@@ -118,38 +118,38 @@ img  {
 }
 
 .headset-quest-bg  {
-  background: url(./oculus-quest-bg.jpg);
+  background: url(./img/oculus-quest-bg.jpg);
   background-size: 1200px;
   background-position: 50%;
 }
 .headset-rift-bg  {
-  background: url(./oculus-rift-bg.jpg);
+  background: url(./img/oculus-rift-bg.jpg);
   background-size: 1300px;
   background-position: 68% 80px;
 }
 .headset-vive-bg  {
-  background: url(./htc-vive-bg.jpg);
+  background: url(./img/htc-vive-bg.jpg);
   background-size: 1000px;
   background-position: 20%;
 }
 .ps-vr-bg  {
-  background: url(./ps-vr-bg.jpg);
+  background: url(./img/ps-vr-bg.jpg);
   background-size: 1000px;
   background-position: 65%;
 }
 .headset-go-bg  {
-  background: url(./oculus-go-bg.jpg);
+  background: url(./img/oculus-go-bg.jpg);
   background-size: 1200px;
   background-position: 20% 60%;
 }
 .headset-gear-bg  {
-  background: url(./Galaxy-S8-Gear-VR-bg.jpg);
+  background: url(./img/Galaxy-S8-Gear-VR-bg.jpg);
   background-size: 800px;
   background-position: 40% -35%;
 }
 
 .games-chronos-bg  {
-  background: url(./Chronos-bg.jpg);
+  background: url(./img/Chronos-bg.jpg);
 }
 
 .bot-bar  {
@@ -425,7 +425,7 @@ and (min-width: 1170px) {
     }
 
     sidebar  {
-      background: url(./gear-vr.jpg);
+      background: url(./img/gear-vr.jpg);
       background-size: 100%;
     }
 
