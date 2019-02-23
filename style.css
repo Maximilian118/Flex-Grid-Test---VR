@@ -344,6 +344,30 @@ input, textarea {
       padding-bottom: 56%;
     }
 
+    .headset-quest-bg  {
+      background-size: 120%;
+      background-position-y: 900px;
+    }
+    .headset-rift-bg  {
+      background-size: 100%;
+      background-position-y: 500px;
+    }
+    .headset-vive-bg  {
+      background-size: 100%;
+      background-position-y: 400px;
+    }
+    .ps-vr-bg  {
+      background-size: 100%;
+      background-position-y: 600px;
+    }
+    .headset-go-bg  {
+      background-size: 150%;
+      background-position-x: 200%;
+    }
+    .headset-gear-bg  {
+      background-size: 100%;
+    }
+
     .bot-bar  {
       margin: 20px 0 0 0;
       font-size: 0.9em;
